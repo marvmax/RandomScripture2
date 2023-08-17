@@ -46,7 +46,7 @@ struct MoveButtonStyle: ButtonStyle {
 
 struct MoveButton_Previews: PreviewProvider {
   static var previews: some View {
-    MoveButton(buttonText: "Pearl of Great Price", colorBackground: "green", action: {print("whats up")})
+    MoveButton(buttonText: "Pearl of Great Price", colorBackground: "blue", action: {print("whats up")})
       //.previewLayout(.sizeThatFits)
   }
 }

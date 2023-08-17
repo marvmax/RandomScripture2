@@ -1610,6 +1610,7 @@
 		0FCFEB5327A028D7008464B8 /* RandomScripturesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCFEB5227A028D7008464B8 /* RandomScripturesUITestsLaunchTests.swift */; };
 		0FCFEB6D27A03009008464B8 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCFEB6C27A03009008464B8 /* ChapterView.swift */; };
 		0FCFEB6F27A0306E008464B8 /* PickBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCFEB6E27A0306E008464B8 /* PickBook.swift */; };
+		0FD7DF542A8E8CA5007D3339 /* RevertFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD7DF532A8E8CA5007D3339 /* RevertFile.swift */; };
 		0FF0D913288C4227008C8491 /* ScreenManiputlation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D912288C4227008C8491 /* ScreenManiputlation.swift */; };
 		0FF0D915288C8C21008C8491 /* StringsAndArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D914288C8C21008C8491 /* StringsAndArrays.swift */; };
 		0FF0D917288C8DB8008C8491 /* ContextScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D916288C8DB8008C8491 /* ContextScrollView.swift */; };
@@ -3241,6 +3242,7 @@
 		0FCFEB5227A028D7008464B8 /* RandomScripturesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomScripturesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0FCFEB6C27A03009008464B8 /* ChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
 		0FCFEB6E27A0306E008464B8 /* PickBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickBook.swift; sourceTree = "<group>"; };
+		0FD7DF532A8E8CA5007D3339 /* RevertFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevertFile.swift; sourceTree = "<group>"; };
 		0FF0D912288C4227008C8491 /* ScreenManiputlation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenManiputlation.swift; sourceTree = "<group>"; };
 		0FF0D914288C8C21008C8491 /* StringsAndArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndArrays.swift; sourceTree = "<group>"; };
 		0FF0D916288C8DB8008C8491 /* ContextScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextScrollView.swift; sourceTree = "<group>"; };
@@ -4950,6 +4952,7 @@
 				0F6501FA286C773F007D9C5B /* PickBookEnviroment.swift */,
 				0FF0D912288C4227008C8491 /* ScreenManiputlation.swift */,
 				0FF0D914288C8C21008C8491 /* StringsAndArrays.swift */,
+				0FD7DF532A8E8CA5007D3339 /* RevertFile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -6685,6 +6688,7 @@
 				0F8A576B28997F1200C6FE31 /* ChooseSetView.swift in Sources */,
 				0F14EABB27A43A79006DBEF6 /* VerseView.swift in Sources */,
 				0F6501F7286BE287007D9C5B /* MoveButton.swift in Sources */,
+				0FD7DF542A8E8CA5007D3339 /* RevertFile.swift in Sources */,
 				0F390B6827AF57EA004CBA39 /* BackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
