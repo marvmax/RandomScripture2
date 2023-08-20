@@ -20,10 +20,12 @@ struct ChooseSetView: View {
         MoveButton(buttonText: "Bible", colorBackground: "yellow") {
           selectedTab = 5
         }
+        .accessibilityIdentifier("bible")
         MoveButton(buttonText: "Standard Works", colorBackground: "red") {
           selectedTab = 0
         }
         .padding(.top)
+        .accessibilityIdentifier("standardWorks")
         Spacer()
       }
       .offset(x: 0, y: -60)

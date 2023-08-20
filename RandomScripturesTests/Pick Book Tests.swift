@@ -58,7 +58,7 @@ class PickBookTests: XCTestCase {
     // given
     
     // when
-    let isDataGood = sutBad.dataIsGood
+    let isDataGood = sutBad.dataIsNotGood
     
     // then
     XCTAssertFalse(isDataGood)
@@ -67,7 +67,7 @@ class PickBookTests: XCTestCase {
   func testPickBook_testGoodData () {
     
     // when
-    let isDataGood = sutGood.dataIsGood
+    let isDataGood = sutGood.dataIsNotGood
     
     // then
     XCTAssert(isDataGood)

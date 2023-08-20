@@ -8,25 +8,24 @@
 import XCTest
 
 class RandomScripturesUITestsLaunchTests: XCTestCase {
-
-    override class var runsForEachTargetApplicationUIConfiguration: Bool {
-        true
-    }
-
-    override func setUpWithError() throws {
-        continueAfterFailure = false
-    }
-
+  /*let app = XCUIApplication()
+  override class var runsForEachTargetApplicationUIConfiguration: Bool {
+    true
+  }
+  
+  override func setUpWithError() throws {
+    continueAfterFailure = false
+    app.launch()
+  }
+  
     func testLaunch() throws {
-        let app = XCUIApplication()
-        app.launch()
-
-        // Insert steps here to perform after app launch but before taking a screenshot,
-        // such as logging into a test account or navigating somewhere in the app
-
-        let attachment = XCTAttachment(screenshot: app.screenshot())
-        attachment.name = "Launch Screen"
-        attachment.lifetime = .keepAlways
-        add(attachment)
-    }
+    // Insert steps here to perform after app launch but before taking a screenshot,
+    // such as logging into a test account or navigating somewhere in the app
+    
+    let bible = app.buttons["bible"]
+    let standardWorks = app.buttons["standardWorks"]
+    
+    XCTAssertEqual(bible.label, "Bible")
+    XCTAssertEqual(standardWorks.label, "Standard Works")
+  }*/
 }

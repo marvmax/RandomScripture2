@@ -21,6 +21,7 @@ struct ChooseView: View {
           returnTab = 0
           scriptures.pickBook = PickBook(work: "Standard Works")
         }
+        .accessibilityLabel("standardWorks")
         
         MoveButton(buttonText: "Bible", colorBackground: "yellow") {
           selectedTab = 1
@@ -34,6 +35,7 @@ struct ChooseView: View {
           returnTab = 0
           scriptures.pickBook = PickBook(work: "Triple Combination")
         }
+        .accessibilityLabel("tripleCombination")
         .padding(.top)
         
         MoveButton(buttonText: "Old Testament", colorBackground: "blue") {

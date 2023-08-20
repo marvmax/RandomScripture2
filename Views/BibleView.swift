@@ -20,21 +20,25 @@ struct BibleView: View {
           returnTab = 5
           scriptures.pickBook = PickBook(work: "Bible")
         }
+        .accessibilityLabel("bible")
         MoveButton(buttonText: "Old Testament", colorBackground: "blue") {
           selectedTab = 1
           returnTab = 5
           scriptures.pickBook = PickBook(work: "Old Testament")
         }
+        .accessibilityLabel("oldTestament")
           .padding()
         MoveButton(buttonText: "New Testament", colorBackground: "green"){
           selectedTab = 1
           returnTab = 5
           scriptures.pickBook = PickBook(work: "New Testament")
         }
+        .accessibilityLabel("newTestament")
         .padding()
         MoveButton(buttonText: "Home", colorBackground: "green") {
           selectedTab = 3
         }
+        .accessibilityLabel("home")
       }
       .offset(x: 0, y: -35)
     }

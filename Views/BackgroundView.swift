@@ -8,24 +8,26 @@
 import SwiftUI
 
 struct BackgroundView: View {
-  var manip = ScreenManipulation()
   var body: some View {
     ZStack {
       Group {
         VStack {
-          Rectangle()
-            .frame(width: .infinity, height: .infinity)
-            .ignoresSafeArea(.all)
-            .foregroundColor(Color("dark-blue"))
-          Rectangle()
-            .frame(width: .infinity, height: .infinity)
-            .ignoresSafeArea(.all)
-            .foregroundColor(Color("light-blue"))
+          GeometryReader { geometry in
+            Rectangle()
+              .frame(width: geometry.size.width, height: geometry.size.height / 2 + 100)
+              .ignoresSafeArea(.all)
+              .foregroundColor(Color("dark-blue"))
+            Rectangle()
+              .frame(width: geometry.size.width, height: geometry.size.height / 2 + 100)
+              .ignoresSafeArea(.all)
+              .foregroundColor(Color("light-blue"))
+              .offset(x: 0, y: geometry.size.height/2)
+          }
         }
       }
       Image("cropped-christus-blue-background")
         .resizable()
-      //.imageScale(.medium)
+      .imageScale(.medium)
         .aspectRatio(contentMode: .fit)
     }
   }
