@@ -20,9 +20,11 @@ struct ChapterView: View {
           Text("Chapter View")
             .font(.largeTitle)
             .foregroundColor(.black)
+            .accessibilityLabel("chapter")
           Text(scriptures.pickBook.label)
             .font(.largeTitle)
             .foregroundColor(.black)
+            .accessibilityLabel("verseInChapter")
         ColoredLetterView()
         .padding([.bottom, .leading, .trailing])
         }

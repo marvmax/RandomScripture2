@@ -22,19 +22,24 @@ struct VerseView: View {
       VStack {
         Text(scriptures.pickBook.label)
           .font(.largeTitle)
+          .accessibilityLabel("verseLable")
         Text(scriptures.pickBook.verse)
           .padding([.leading, .trailing])
+          .accessibilityLabel("verse")
         MoveButton(buttonText: "Chapter", colorBackground: "blue") {
           selectedTab = 2
         }
+        .accessibilityLabel("chapter")
         .padding(.top)
         MoveButton(buttonText: "Context", colorBackground: "purple") {
           selectedTab = 4
         }
+        .accessibilityLabel("context")
         .padding(.top)
         MoveButton(buttonText: "Home", colorBackground: "red") {
           selectedTab = 3
         }
+        .accessibilityLabel("home")
         .padding(.top)
       }
       .offset(x: 0, y: -50)

@@ -42,7 +42,7 @@ final class RandomScripturesSnapshotUITests: XCTestCase {
     add(attachment)*/
   }
   
-  func testPickSet() throws {
+  func testPickChristian() throws {
     app.buttons["bible"].tap()
     
     let bible = app.buttons["bible"]
@@ -57,14 +57,59 @@ final class RandomScripturesSnapshotUITests: XCTestCase {
     snapshot("Christian Scriptures")
   }
   
+  func testRestorationPickScriptures() throws {
+    app.buttons["standardWorks"].tap()
+    
+    let standardWorks = app.buttons["standardWorks"]
+    let tripleCombination = app.buttons["tripleCombination"]
+    let bookOfMormon = app.buttons["bookOfMormon"]
+    let doctrineAndCovenants = app.buttons["doctrineAndCovenants"]
+    let pearlOfGreatPrice = app.buttons["pearlOfGreatPrice"]
+    
+    XCTAssertTrue(standardWorks.exists)
+    XCTAssertTrue(tripleCombination.exists)
+    XCTAssertTrue(bookOfMormon.exists)
+    XCTAssertTrue(doctrineAndCovenants.exists)
+    XCTAssertTrue(pearlOfGreatPrice.exists)
+    snapshot("Restoration Scripture")
+  }
   
+  func testVerseView() throws {
+    app.buttons["standardWorks"].tap()
+    app.buttons["tripleCombination"].tap()
+    
+    let verseLable = app.staticTexts["verseLable"]
+    let verse = app.staticTexts["verse"]
   
+    XCTAssertTrue(verseLable.exists)
+    XCTAssertTrue(verse.exists)
+    snapshot("Verse View")
+  }
   
-  /*func testLaunchPerformance() throws {
-   if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-   // This measures how long it takes to launch your application.
-   measure(metrics: [XCTApplicationLaunchMetric()]) {
-   XCUIApplication().launch()
-   }
-   }*/
+  func testContextView() throws {
+    app.buttons["standardWorks"].tap()
+    app.buttons["tripleCombination"].tap()
+    app.buttons["context"].tap()
+    
+    let context = app.staticTexts["context"]
+    let verseInContext = app.staticTexts["verseInContext"]
+  
+    XCTAssertTrue(context.exists)
+    XCTAssertTrue(verseInContext.exists)
+    snapshot("Context View")
+  }
+  
+  func testChapterView() throws {
+    app.buttons["standardWorks"].tap()
+    app.buttons["tripleCombination"].tap()
+    app.buttons["context"].tap()
+    app.buttons["chapter"].tap()
+    
+    let chapter = app.staticTexts["chapter"]
+    let verseInChapter = app.staticTexts["verseInChapter"]
+    
+    XCTAssertTrue(chapter.exists)
+    XCTAssertTrue(verseInChapter.exists)
+    snapshot("Chapter View")
+  }
 }

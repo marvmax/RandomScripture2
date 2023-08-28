@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SplashView: View {
+struct LaunchView: View {
   var body: some View {
     ZStack {
       BackgroundView()
@@ -20,8 +20,8 @@ struct SplashView: View {
   }
 }
 
-struct SplashView_Previews: PreviewProvider {
+struct LaunchView_Previews: PreviewProvider {
   static var previews: some View {
-    SplashView()
+    LaunchView()
   }
 }

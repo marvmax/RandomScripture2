@@ -57,6 +57,7 @@ struct ChooseView: View {
           returnTab = 0
           scriptures.pickBook = PickBook(work: "Book of Mormon")
         }
+        .accessibilityLabel("bookOfMormon")
         .padding(.top)
         
         MoveButton(buttonText: "Doctrine and Covenants", colorBackground: "blue") {
@@ -64,6 +65,7 @@ struct ChooseView: View {
           returnTab = 0
           scriptures.pickBook = PickBook(work: "Doctrine and Covenants")
         }
+        .accessibilityLabel("doctrineAndCovenants")
         .padding(.top)
         
         MoveButton(buttonText: "Pearl of Great Price", colorBackground: "pink") {
@@ -71,6 +73,7 @@ struct ChooseView: View {
           returnTab = 0
           scriptures.pickBook = PickBook(work: "Pearl of Great Price")
         }
+        .accessibilityLabel("pearlOfGreatPrice")
         .padding()
         MoveButton(buttonText: "Home", colorBackground: "green") {
           selectedTab = 3

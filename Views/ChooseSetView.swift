@@ -37,5 +37,6 @@ struct ChooseSetView: View {
 struct ChooseSetView_Previews: PreviewProvider {
     static var previews: some View {
       ChooseSetView(selectedTab: .constant(3))
+        .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
     }
 }

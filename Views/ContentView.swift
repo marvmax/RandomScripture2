@@ -37,5 +37,6 @@ struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
       .environmentObject(Scriptures())
+      .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
   }
 }

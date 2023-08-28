@@ -10,6 +10,7 @@
 		0F14EABB27A43A79006DBEF6 /* VerseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F14EABA27A43A79006DBEF6 /* VerseView.swift */; };
 		0F390B6827AF57EA004CBA39 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F390B6727AF57EA004CBA39 /* BackgroundView.swift */; };
 		0F390B6A27AF5841004CBA39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F390B6927AF5841004CBA39 /* Assets.xcassets */; };
+		0F60A47F2A9B02E4002892EF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F60A47E2A9B02E4002892EF /* Launch Screen.storyboard */; };
 		0F6501F7286BE287007D9C5B /* MoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6501F6286BE287007D9C5B /* MoveButton.swift */; };
 		0F6501F9286C62CB007D9C5B /* ChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6501F8286C62CB007D9C5B /* ChooseView.swift */; };
 		0F6501FB286C773F007D9C5B /* PickBookEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6501FA286C773F007D9C5B /* PickBookEnviroment.swift */; };
@@ -1617,7 +1618,7 @@
 		0FF0D913288C4227008C8491 /* ScreenManiputlation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D912288C4227008C8491 /* ScreenManiputlation.swift */; };
 		0FF0D915288C8C21008C8491 /* StringsAndArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D914288C8C21008C8491 /* StringsAndArrays.swift */; };
 		0FF0D917288C8DB8008C8491 /* ContextScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D916288C8DB8008C8491 /* ContextScrollView.swift */; };
-		0FFF48B5288B616500CACAA0 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFF48B4288B616500CACAA0 /* SplashView.swift */; };
+		0FFF48B5288B616500CACAA0 /* LaunchView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFF48B4288B616500CACAA0 /* LaunchView1.swift */; };
 		0FFF48B7288B9E1300CACAA0 /* ColoredLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFF48B6288B9E1300CACAA0 /* ColoredLetterView.swift */; };
 /* End PBXBuildFile section */
 
@@ -1649,6 +1650,7 @@
 		0F14EABA27A43A79006DBEF6 /* VerseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseView.swift; sourceTree = "<group>"; };
 		0F390B6727AF57EA004CBA39 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		0F390B6927AF5841004CBA39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F60A47E2A9B02E4002892EF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Views/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
 		0F6501F6286BE287007D9C5B /* MoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveButton.swift; sourceTree = "<group>"; };
 		0F6501F8286C62CB007D9C5B /* ChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseView.swift; sourceTree = "<group>"; };
 		0F6501FA286C773F007D9C5B /* PickBookEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickBookEnviroment.swift; sourceTree = "<group>"; };
@@ -3259,7 +3261,7 @@
 		0FF0D912288C4227008C8491 /* ScreenManiputlation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenManiputlation.swift; sourceTree = "<group>"; };
 		0FF0D914288C8C21008C8491 /* StringsAndArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndArrays.swift; sourceTree = "<group>"; };
 		0FF0D916288C8DB8008C8491 /* ContextScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextScrollView.swift; sourceTree = "<group>"; };
-		0FFF48B4288B616500CACAA0 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		0FFF48B4288B616500CACAA0 /* LaunchView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView1.swift; sourceTree = "<group>"; };
 		0FFF48B6288B9E1300CACAA0 /* ColoredLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredLetterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -4954,7 +4956,7 @@
 				0F14EABA27A43A79006DBEF6 /* VerseView.swift */,
 				0F390B6727AF57EA004CBA39 /* BackgroundView.swift */,
 				0F6501F6286BE287007D9C5B /* MoveButton.swift */,
-				0FFF48B4288B616500CACAA0 /* SplashView.swift */,
+				0FFF48B4288B616500CACAA0 /* LaunchView1.swift */,
 				0FFF48B6288B9E1300CACAA0 /* ColoredLetterView.swift */,
 				0FF0D916288C8DB8008C8491 /* ContextScrollView.swift */,
 				0FB43A942894442800FDEE3B /* ContextView.swift */,
@@ -4971,6 +4973,7 @@
 			children = (
 				0FCFEB6E27A0306E008464B8 /* PickBook.swift */,
 				0F9851B227AA0DBA00A0286D /* ChapterArray.swift */,
+				0F60A47E2A9B02E4002892EF /* Launch Screen.storyboard */,
 				0F6501FA286C773F007D9C5B /* PickBookEnviroment.swift */,
 				0FF0D912288C4227008C8491 /* ScreenManiputlation.swift */,
 				0FF0D914288C8C21008C8491 /* StringsAndArrays.swift */,
@@ -6581,6 +6584,7 @@
 				0F98514B27A9F87C00A0286D /* Genesis 39.json in Resources */,
 				0F98495927A9F64000A0286D /* Acts 8.json in Resources */,
 				0F9846F627A9F57800A0286D /* 1 Nephi 10.json in Resources */,
+				0F60A47F2A9B02E4002892EF /* Launch Screen.storyboard in Resources */,
 				0F98506627A9F87B00A0286D /* Exodus 35.json in Resources */,
 				0F984F5D27A9F87A00A0286D /* Jeremiah 11.json in Resources */,
 				0F98516527A9F87C00A0286D /* 1 Chronicles 1.json in Resources */,
@@ -6730,7 +6734,7 @@
 			files = (
 				0FF0D917288C8DB8008C8491 /* ContextScrollView.swift in Sources */,
 				0F9851B327AA0DBA00A0286D /* ChapterArray.swift in Sources */,
-				0FFF48B5288B616500CACAA0 /* SplashView.swift in Sources */,
+				0FFF48B5288B616500CACAA0 /* LaunchView1.swift in Sources */,
 				0F8A576D2899829E00C6FE31 /* BibleView.swift in Sources */,
 				0FF0D915288C8C21008C8491 /* StringsAndArrays.swift in Sources */,
 				0F6501F9286C62CB007D9C5B /* ChooseView.swift in Sources */,
@@ -6850,7 +6854,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -6905,7 +6909,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -6921,18 +6925,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RandomScriptures/Preview Content\"";
-				DEVELOPMENT_TEAM = BXJ36T4877;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = BXJ36T4877;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RandomScriptures/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Random Scriptures";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -6941,6 +6952,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.evans.RandomScriptures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Random Scripture Provisioning";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6959,12 +6971,17 @@
 				DEVELOPMENT_TEAM = BXJ36T4877;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RandomScriptures/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Random Scriptures";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
