@@ -15,26 +15,38 @@ struct ColoredLetter: Hashable {
 
 struct ColoredLetterView: View {
   @EnvironmentObject var scriptures: Scriptures
+  @EnvironmentObject var opacity: Opacity
+  
   //@State private var chapter = [ColoredLetter]()
   let manip = ScreenManipulation()
   let StrAndArr = StringsAndArrays()
+  let screenWidthPercentage = 0.9
+  let screenHeightPercentage = 0.9
   var body: some View {
     let verses = scriptures.pickBook.verses
     let compare = scriptures.pickBook.randomScriptureInt
     let chapter = StrAndArr.createColoredLetters(verses: verses, compare: compare)
-    ZStack {
-      Rectangle()
-        .frame(width: manip.getFrameWidth(), height: manip.getFrameHeight())
-        .foregroundColor(.white)
-        .opacity(0.7)
-    ScrollView {
-      ForEach(chapter, id: \.self) { verse in
-        Text(verse.verse)
-          .foregroundColor(verse.changeColor ? .red : .black)
+      ZStack {
+        GeometryReader { geometry in
+          let height = geometry.size.height - (geometry.size.height - (geometry.size.height * screenHeightPercentage))
+          let heightOffset = (geometry.size.height - height) / 2
+          let width = geometry.size.width - (geometry.size.width - (geometry.size.width * screenWidthPercentage))
+          let widthOffset = (geometry.size.width - width) / 2
+          Rectangle()
+            .frame(width: width, height: height)
+            .offset(CGSize(width: widthOffset, height: heightOffset))
+            .foregroundColor(.white.opacity(opacity.opacity))
+          ScrollView {
+            ForEach(chapter, id: \.self) { verse in
+              Text(verse.verse)
+                .foregroundColor(verse.changeColor ? .red : .black)
+            }
+          }
+          .padding([.trailing, .leading])
+          .frame(width: width, height: height)
+          .offset(CGSize(width: widthOffset, height: heightOffset))
+        }
       }
-    }
-    .frame(width: manip.getFrameWidth(), height: manip.getFrameHeight())
-    }
   }
 }
 
@@ -42,9 +54,11 @@ struct ColoredLetterView_Previews: PreviewProvider {
   static var previews: some View {
     ColoredLetterView()
       .environmentObject(Scriptures())
+      .environmentObject(Opacity())
       .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro"))
     ColoredLetterView()
       .environmentObject(Scriptures())
+      .environmentObject(Opacity())
       .previewDevice(PreviewDevice(rawValue: "iPhone 13 mini"))
   }
 }

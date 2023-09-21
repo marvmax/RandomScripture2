@@ -9,22 +9,34 @@ import SwiftUI
 
 struct ContextScrollView: View {
   @EnvironmentObject var scriptures: Scriptures
+  @EnvironmentObject var opacity: Opacity
   var staa = StringsAndArrays()
   var manip = ScreenManipulation()
+  let screenHeightPercentage = 0.9
+  let screenWidthPercentage = 0.9
   var body: some View {
     let verses = staa.getTheContextSlice(verses: scriptures.pickBook.redLetterChapter, index: scriptures.pickBook.randomScriptureInt)
     ZStack {
-      Rectangle()
-        .frame(width: manip.getFrameWidth(), height: manip.getFrameHeight())
-        .foregroundColor(.white)
-        .opacity(0.7)
-      ScrollView {
-        ForEach(verses, id: \.self) { verse in
-          Text(verse.verse)
-            .foregroundColor(verse.changeColor ? .red : .black)
+      GeometryReader { geometry in
+        let height = geometry.size.height - (geometry.size.height - (geometry.size.height * screenHeightPercentage))
+        let heightOffset = (geometry.size.height - height) / 2
+        let width = geometry.size.width - (geometry.size.width - (geometry.size.width * screenWidthPercentage))
+        let widthOffset = (geometry.size.width - width) / 2
+        Rectangle()
+          .frame(width: width, height: height)
+          .offset(CGSize(width: widthOffset, height: heightOffset))
+          .foregroundColor(.white.opacity(opacity.opacity))
+          .opacity(opacity.opacity)
+        ScrollView {
+          ForEach(verses, id: \.self) { verse in
+            Text(verse.verse)
+              .foregroundColor(verse.changeColor ? .red : .black)
+          }
         }
+        .padding([.trailing, .leading])
+        .frame(width: width, height: height)
+        .offset(CGSize(width: widthOffset, height: heightOffset))
       }
-      .frame(width: manip.getFrameWidth(), height: manip.getFrameHeight())
     }
   }
 }
@@ -39,5 +51,6 @@ struct ContextScrollView_Previews: PreviewProvider {
   static var previews: some View {
     ContextScrollView()
       .environmentObject(Scriptures())
+      .environmentObject(Opacity())
   }
 }

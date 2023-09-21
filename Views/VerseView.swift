@@ -11,8 +11,9 @@ import Combine
 struct VerseView: View {
   @Binding var selectedTab: Int
   @Binding var returnTab: Int
+  @Binding var chooseAgainTab: Int
   @EnvironmentObject var scriptures: Scriptures
-  
+  @EnvironmentObject var opacity: Opacity
   
   //var work: String
   var body: some View {
@@ -24,23 +25,29 @@ struct VerseView: View {
           .font(.largeTitle)
           .accessibilityLabel("verseLable")
         Text(scriptures.pickBook.verse)
+          .background(Color.white.opacity(opacity.opacity))
           .padding([.leading, .trailing])
           .accessibilityLabel("verse")
-        MoveButton(buttonText: "Chapter", colorBackground: "blue") {
+        MoveButton(buttonText: "Verse in Chapter", colorBackground: "blue") {
           selectedTab = 2
         }
         .accessibilityLabel("chapter")
         .padding(.top)
-        MoveButton(buttonText: "Context", colorBackground: "purple") {
+        MoveButton(buttonText: "Verse in Context", colorBackground: "purple") {
           selectedTab = 4
         }
         .accessibilityLabel("context")
         .padding(.top)
+        MoveButton(buttonText: "Choose Again", colorBackground: "yellow") {
+          selectedTab = chooseAgainTab
+        }
+        .accessibilityLabel("chooseAgain")
+        .padding()
         MoveButton(buttonText: "Home", colorBackground: "red") {
           selectedTab = 3
         }
         .accessibilityLabel("home")
-        .padding(.top)
+        //.padding(.top)
       }
       .offset(x: 0, y: -50)
     }
@@ -56,7 +63,8 @@ struct VerseView: View {
 
 struct VerseView_Previews: PreviewProvider {
   static var previews: some View {
-    VerseView(selectedTab: .constant(1), returnTab: .constant(2))
+    VerseView(selectedTab: .constant(1), returnTab: .constant(2), chooseAgainTab: .constant(5))
       .environmentObject(Scriptures())
+      .environmentObject(Opacity())
   }
 }

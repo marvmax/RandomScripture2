@@ -1618,7 +1618,6 @@
 		0FF0D913288C4227008C8491 /* ScreenManiputlation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D912288C4227008C8491 /* ScreenManiputlation.swift */; };
 		0FF0D915288C8C21008C8491 /* StringsAndArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D914288C8C21008C8491 /* StringsAndArrays.swift */; };
 		0FF0D917288C8DB8008C8491 /* ContextScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D916288C8DB8008C8491 /* ContextScrollView.swift */; };
-		0FFF48B5288B616500CACAA0 /* LaunchView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFF48B4288B616500CACAA0 /* LaunchView1.swift */; };
 		0FFF48B7288B9E1300CACAA0 /* ColoredLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFF48B6288B9E1300CACAA0 /* ColoredLetterView.swift */; };
 /* End PBXBuildFile section */
 
@@ -3261,7 +3260,6 @@
 		0FF0D912288C4227008C8491 /* ScreenManiputlation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenManiputlation.swift; sourceTree = "<group>"; };
 		0FF0D914288C8C21008C8491 /* StringsAndArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndArrays.swift; sourceTree = "<group>"; };
 		0FF0D916288C8DB8008C8491 /* ContextScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextScrollView.swift; sourceTree = "<group>"; };
-		0FFF48B4288B616500CACAA0 /* LaunchView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView1.swift; sourceTree = "<group>"; };
 		0FFF48B6288B9E1300CACAA0 /* ColoredLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredLetterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -4956,7 +4954,6 @@
 				0F14EABA27A43A79006DBEF6 /* VerseView.swift */,
 				0F390B6727AF57EA004CBA39 /* BackgroundView.swift */,
 				0F6501F6286BE287007D9C5B /* MoveButton.swift */,
-				0FFF48B4288B616500CACAA0 /* LaunchView1.swift */,
 				0FFF48B6288B9E1300CACAA0 /* ColoredLetterView.swift */,
 				0FF0D916288C8DB8008C8491 /* ContextScrollView.swift */,
 				0FB43A942894442800FDEE3B /* ContextView.swift */,
@@ -6734,7 +6731,6 @@
 			files = (
 				0FF0D917288C8DB8008C8491 /* ContextScrollView.swift in Sources */,
 				0F9851B327AA0DBA00A0286D /* ChapterArray.swift in Sources */,
-				0FFF48B5288B616500CACAA0 /* LaunchView1.swift in Sources */,
 				0F8A576D2899829E00C6FE31 /* BibleView.swift in Sources */,
 				0FF0D915288C8C21008C8491 /* StringsAndArrays.swift in Sources */,
 				0F6501F9286C62CB007D9C5B /* ChooseView.swift in Sources */,
@@ -6924,7 +6920,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;

@@ -13,6 +13,7 @@ enum Screens {
 }
 
 struct ScreenManipulation {
+  var screenMainPercentage = 0.7
   func getFrameWidth() -> CGFloat {
     var frameWidth = UIScreen.main.nativeBounds.width
     let name = UIDevice.current.name

@@ -15,6 +15,10 @@ class Scriptures: ObservableObject {
   }
 }
 
+class Opacity: ObservableObject {
+  @Published var opacity = 0.7
+}
+
 enum PickBookError: Error {
   case jsonError
   case decoderError
