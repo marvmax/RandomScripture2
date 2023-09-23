@@ -15,8 +15,10 @@ class Scriptures: ObservableObject {
   }
 }
 
-class Opacity: ObservableObject {
-  @Published var opacity = 0.7
+class ScreenSettings: ObservableObject {
+  @Published var opacity = 0.8
+  @Published var screenPercentages = (width: 0.9, height: 0.9)
+  init(){}
 }
 
 enum PickBookError: Error {
@@ -25,5 +27,16 @@ enum PickBookError: Error {
   case versesError
   case verseStringError
   case noArrayError
+}
+
+struct ColoredLetter: Hashable {
+  var verse: String
+  var changeColor: Bool
+}
+
+struct Verse: Codable, Hashable  {
+  let reference: String
+  let text: String
+  let verse: Int
 }
 

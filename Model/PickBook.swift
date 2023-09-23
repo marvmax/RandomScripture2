@@ -6,11 +6,11 @@
 //
 import Foundation
 
-struct Verse: Codable, Hashable  {
+/*struct Verse: Codable, Hashable  {
   let reference: String
   let text: String
   let verse: Int
-}
+}*/
 
 /*
 struct VerseData {
@@ -67,7 +67,7 @@ class PickBook: ObservableObject {
     self.verseStrings =  getStringVerses()
     self.label = String(getVerseLabel(verses))
     self.verse = String(getVerse())
-    self.dataIsNotGood = isDataGood()
+    self.dataIsNotGood = !isDataGood()
     let staa = StringsAndArrays()
     self.redLetterChapter = staa.createColoredLetters(verses: verses, compare: randomScriptureInt)
   }
@@ -195,10 +195,11 @@ extension PickBook {
   
   // This logic is used
   func isDataGood() -> Bool {
-    if self.verse == "" || self.label == "" {
-      return true
-    } else {
+    //
+    if self.verse.isEmpty || self.label.isEmpty {
       return false
+    } else {
+      return true
     }
   }
 }

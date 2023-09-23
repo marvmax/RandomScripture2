@@ -301,6 +301,7 @@ struct StandardWorks {
   [55]] // Joseph Smith-Matthew
   
   private let standardWorks = ["Standard Works", "Bible", "Triple Combination", "Old Testament", "New Testament", "Book of Mormon", "Doctrine and Covenants", "Pearl of Great Price"]
+  
   func getBookInt(standardWork work: String) -> Int {
     // Used for testing
     //print("Entering PickBook.getBook")
@@ -364,8 +365,8 @@ struct StandardWorks {
       let chapters = standardWorksChapters[arrayAcess]
       scriptureInt = Int.random(in: 0..<work.count)
       bookName = work[scriptureInt]
-      if let work = (chapters[bookName]) {
-        bookChapter = work
+      if let chapter = (chapters[bookName]) {
+        bookChapter = chapter
       }
       if bookName == "Articles of Faith" {
         bookChapter = 0
@@ -383,7 +384,9 @@ struct StandardWorks {
     if arrayAccess != -3 {
       // Used for testing
       //print("Entering ChapterArray.randomVerseInt")
+      // an a array of the books in one of the standard works
       let standardWorksBooks = [oldTestamentBooks, newTestamentBooks, bookOfMormonBooks, doctrineAndCovenantsBooks, pearlOfGreatPriceBooks]
+      // a dictionary of how many chapters are in each book
       let standardWorksVerses = [versesOT, versesNT, versesBoM, versesDC, versesPoGP]
       let books = standardWorksBooks[arrayAccess]
       let verses = standardWorksVerses[arrayAccess]

@@ -9,24 +9,23 @@ import SwiftUI
 
 struct ContextScrollView: View {
   @EnvironmentObject var scriptures: Scriptures
-  @EnvironmentObject var opacity: Opacity
+  @EnvironmentObject var screenSettings: ScreenSettings
   var staa = StringsAndArrays()
-  var manip = ScreenManipulation()
   let screenHeightPercentage = 0.9
   let screenWidthPercentage = 0.9
   var body: some View {
     let verses = staa.getTheContextSlice(verses: scriptures.pickBook.redLetterChapter, index: scriptures.pickBook.randomScriptureInt)
     ZStack {
       GeometryReader { geometry in
-        let height = geometry.size.height - (geometry.size.height - (geometry.size.height * screenHeightPercentage))
+        let height = geometry.size.height - (geometry.size.height - (geometry.size.height * screenSettings.screenPercentages.height))
         let heightOffset = (geometry.size.height - height) / 2
-        let width = geometry.size.width - (geometry.size.width - (geometry.size.width * screenWidthPercentage))
+        let width = geometry.size.width - (geometry.size.width - (geometry.size.width * screenSettings.screenPercentages.height))
         let widthOffset = (geometry.size.width - width) / 2
         Rectangle()
           .frame(width: width, height: height)
           .offset(CGSize(width: widthOffset, height: heightOffset))
-          .foregroundColor(.white.opacity(opacity.opacity))
-          .opacity(opacity.opacity)
+          .foregroundColor(.white.opacity(screenSettings.opacity))
+          .opacity(screenSettings.opacity)
         ScrollView {
           ForEach(verses, id: \.self) { verse in
             Text(verse.verse)
@@ -42,15 +41,10 @@ struct ContextScrollView: View {
 }
 
 struct ContextScrollView_Previews: PreviewProvider {
-  @State static private var chapter = [ColoredLetter]()
-  //let aaa = StringsAndArrays().
-  //@State var chapter: [ColoredLetter]
-  
-  //var saa = StringsAndArrays()
-  
+  //@State static private var chapter = [ColoredLetter]()
   static var previews: some View {
     ContextScrollView()
       .environmentObject(Scriptures())
-      .environmentObject(Opacity())
+      .environmentObject(ScreenSettings())
   }
 }

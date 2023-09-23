@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContextView: View {
   @EnvironmentObject var scriptures: Scriptures
-  @EnvironmentObject var opacity: Opacity
+  @EnvironmentObject var screenSettings: ScreenSettings
   @Binding var selectedTab: Int
   @Binding var returnTab: Int
   @Binding var chooseAgainTab: Int
@@ -58,10 +58,10 @@ struct ContextView_Previews: PreviewProvider {
   static var previews: some View {
     ContextView(selectedTab: .constant(4), returnTab: .constant(5), chooseAgainTab: .constant(5))
       .environmentObject(Scriptures())
-      .environmentObject(Opacity())
+      .environmentObject(ScreenSettings())
     ContextView(selectedTab: .constant(4), returnTab: .constant(5), chooseAgainTab: .constant(5))
       .environmentObject(Scriptures())
-      .environmentObject(Opacity())
+      .environmentObject(ScreenSettings())
       .previewDevice("iPhone 11")
   }
 }

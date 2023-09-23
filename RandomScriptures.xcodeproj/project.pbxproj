@@ -10,10 +10,11 @@
 		0F14EABB27A43A79006DBEF6 /* VerseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F14EABA27A43A79006DBEF6 /* VerseView.swift */; };
 		0F390B6827AF57EA004CBA39 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F390B6727AF57EA004CBA39 /* BackgroundView.swift */; };
 		0F390B6A27AF5841004CBA39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F390B6927AF5841004CBA39 /* Assets.xcassets */; };
+		0F4D3D3C2ABD112200AD6CD4 /* PickBookEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6501FA286C773F007D9C5B /* PickBookEnviroment.swift */; };
+		0F4D3D412ABD2B9700AD6CD4 /* MockChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4BF882ABCCD7000FB20B9 /* MockChapter.swift */; };
 		0F60A47F2A9B02E4002892EF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F60A47E2A9B02E4002892EF /* Launch Screen.storyboard */; };
 		0F6501F7286BE287007D9C5B /* MoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6501F6286BE287007D9C5B /* MoveButton.swift */; };
 		0F6501F9286C62CB007D9C5B /* ChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6501F8286C62CB007D9C5B /* ChooseView.swift */; };
-		0F6501FB286C773F007D9C5B /* PickBookEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6501FA286C773F007D9C5B /* PickBookEnviroment.swift */; };
 		0F85F1D42A92C2A400C6B0C2 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD7E5A12A8F1B57007D3339 /* SnapshotHelper.swift */; };
 		0F8A576B28997F1200C6FE31 /* ChooseSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8A576A28997F1200C6FE31 /* ChooseSetView.swift */; };
 		0F8A576D2899829E00C6FE31 /* BibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8A576C2899829E00C6FE31 /* BibleView.swift */; };
@@ -1615,7 +1616,6 @@
 		0FE75B672A906AB100A75A1E /* RandomScripturesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCFEB5027A028D7008464B8 /* RandomScripturesUITests.swift */; };
 		0FE75B682A906AB100A75A1E /* RandomScripturesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCFEB5227A028D7008464B8 /* RandomScripturesUITestsLaunchTests.swift */; };
 		0FE75B6F2A906F6000A75A1E /* RandomScripturesSnapshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE75B592A904D4500A75A1E /* RandomScripturesSnapshotUITests.swift */; };
-		0FF0D913288C4227008C8491 /* ScreenManiputlation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D912288C4227008C8491 /* ScreenManiputlation.swift */; };
 		0FF0D915288C8C21008C8491 /* StringsAndArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D914288C8C21008C8491 /* StringsAndArrays.swift */; };
 		0FF0D917288C8DB8008C8491 /* ContextScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0D916288C8DB8008C8491 /* ContextScrollView.swift */; };
 		0FFF48B7288B9E1300CACAA0 /* ColoredLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFF48B6288B9E1300CACAA0 /* ColoredLetterView.swift */; };
@@ -3240,6 +3240,7 @@
 		0F9851B627AA258C00A0286D /* D&C 132.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "D&C 132.json"; sourceTree = "<group>"; };
 		0F9851B727AA258C00A0286D /* D&C 131.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "D&C 131.json"; sourceTree = "<group>"; };
 		0F9851BA27AA281C00A0286D /* Joseph Smith-History 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Joseph Smith-History 1.json"; sourceTree = "<group>"; };
+		0FA4BF882ABCCD7000FB20B9 /* MockChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChapter.swift; sourceTree = "<group>"; };
 		0FB002142894CAC2006C0AB6 /* Pick Book Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pick Book Tests.swift"; sourceTree = "<group>"; };
 		0FB43A942894442800FDEE3B /* ContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextView.swift; sourceTree = "<group>"; };
 		0FCFEB3227A028D4008464B8 /* RandomScriptures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomScriptures.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3257,7 +3258,6 @@
 		0FE75B592A904D4500A75A1E /* RandomScripturesSnapshotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomScripturesSnapshotUITests.swift; sourceTree = "<group>"; };
 		0FE75B5B2A904D4500A75A1E /* RandomScripturesSnapshotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomScripturesSnapshotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0FE75B6E2A906AB100A75A1E /* RandomScripturesSnapshotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomScripturesSnapshotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FF0D912288C4227008C8491 /* ScreenManiputlation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenManiputlation.swift; sourceTree = "<group>"; };
 		0FF0D914288C8C21008C8491 /* StringsAndArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndArrays.swift; sourceTree = "<group>"; };
 		0FF0D916288C8DB8008C8491 /* ContextScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextScrollView.swift; sourceTree = "<group>"; };
 		0FFF48B6288B9E1300CACAA0 /* ColoredLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredLetterView.swift; sourceTree = "<group>"; };
@@ -3295,6 +3295,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4D3D3E2ABD25C900AD6CD4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0FA4BF882ABCCD7000FB20B9 /* MockChapter.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		0FCFEB2927A028D4008464B8 = {
 			isa = PBXGroup;
 			children = (
@@ -3341,6 +3349,7 @@
 		0FCFEB4527A028D7008464B8 /* RandomScripturesTests */ = {
 			isa = PBXGroup;
 			children = (
+				0F4D3D3E2ABD25C900AD6CD4 /* Mocks */,
 				0FCFEB4627A028D7008464B8 /* StringsAndArrayTests.swift */,
 				0FB002142894CAC2006C0AB6 /* Pick Book Tests.swift */,
 			);
@@ -4972,7 +4981,6 @@
 				0F9851B227AA0DBA00A0286D /* ChapterArray.swift */,
 				0F60A47E2A9B02E4002892EF /* Launch Screen.storyboard */,
 				0F6501FA286C773F007D9C5B /* PickBookEnviroment.swift */,
-				0FF0D912288C4227008C8491 /* ScreenManiputlation.swift */,
 				0FF0D914288C8C21008C8491 /* StringsAndArrays.swift */,
 			);
 			path = Model;
@@ -6733,12 +6741,12 @@
 				0F9851B327AA0DBA00A0286D /* ChapterArray.swift in Sources */,
 				0F8A576D2899829E00C6FE31 /* BibleView.swift in Sources */,
 				0FF0D915288C8C21008C8491 /* StringsAndArrays.swift in Sources */,
+				0F4D3D412ABD2B9700AD6CD4 /* MockChapter.swift in Sources */,
 				0F6501F9286C62CB007D9C5B /* ChooseView.swift in Sources */,
+				0F4D3D3C2ABD112200AD6CD4 /* PickBookEnviroment.swift in Sources */,
 				0FCFEB6D27A03009008464B8 /* ChapterView.swift in Sources */,
-				0FF0D913288C4227008C8491 /* ScreenManiputlation.swift in Sources */,
 				0FCFEB3827A028D4008464B8 /* ContentView.swift in Sources */,
 				0FFF48B7288B9E1300CACAA0 /* ColoredLetterView.swift in Sources */,
-				0F6501FB286C773F007D9C5B /* PickBookEnviroment.swift in Sources */,
 				0FCFEB3627A028D4008464B8 /* RandomScripturesApp.swift in Sources */,
 				0FCFEB6F27A0306E008464B8 /* PickBook.swift in Sources */,
 				0FB43A952894442800FDEE3B /* ContextView.swift in Sources */,
@@ -6923,7 +6931,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"RandomScriptures/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = BXJ36T4877;
@@ -6962,7 +6970,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"RandomScriptures/Preview Content\"";
 				DEVELOPMENT_TEAM = BXJ36T4877;
 				ENABLE_PREVIEWS = YES;
@@ -6998,7 +7006,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = BXJ36T4877;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -7023,7 +7031,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = BXJ36T4877;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -7047,7 +7055,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = BXJ36T4877;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7070,7 +7078,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = BXJ36T4877;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7093,7 +7101,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = BXJ36T4877;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7116,7 +7124,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = BXJ36T4877;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (

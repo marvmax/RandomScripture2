@@ -13,7 +13,7 @@ struct VerseView: View {
   @Binding var returnTab: Int
   @Binding var chooseAgainTab: Int
   @EnvironmentObject var scriptures: Scriptures
-  @EnvironmentObject var opacity: Opacity
+  @EnvironmentObject var screenSettings: ScreenSettings
   
   //var work: String
   var body: some View {
@@ -25,7 +25,7 @@ struct VerseView: View {
           .font(.largeTitle)
           .accessibilityLabel("verseLable")
         Text(scriptures.pickBook.verse)
-          .background(Color.white.opacity(opacity.opacity))
+          .background(Color.white.opacity(screenSettings.opacity))
           .padding([.leading, .trailing])
           .accessibilityLabel("verse")
         MoveButton(buttonText: "Verse in Chapter", colorBackground: "blue") {
@@ -65,6 +65,6 @@ struct VerseView_Previews: PreviewProvider {
   static var previews: some View {
     VerseView(selectedTab: .constant(1), returnTab: .constant(2), chooseAgainTab: .constant(5))
       .environmentObject(Scriptures())
-      .environmentObject(Opacity())
+      .environmentObject(ScreenSettings())
   }
 }

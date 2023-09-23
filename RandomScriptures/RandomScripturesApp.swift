@@ -10,12 +10,12 @@ import SwiftUI
 @main
 struct RandomScripturesApp: App {
   let scriptures = Scriptures()
-  let opacity = Opacity()
+  let screenSettings = ScreenSettings()
   var body: some Scene {
     WindowGroup {
       ContentView()
         .environmentObject(scriptures)
-        .environmentObject(opacity)
+        .environmentObject(screenSettings)
     }
   }
 }

@@ -15,6 +15,9 @@ struct BibleView: View {
     ZStack {
       BackgroundView()
       VStack {
+        Text("Choose a Book to generate\na verse from")
+          .font(.title)
+          .multilineTextAlignment(.center)
         MoveButton(buttonText: "Bible", colorBackground: "red") {
           selectedTab = 1
           returnTab = 5

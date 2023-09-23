@@ -44,35 +44,6 @@ class PickBookTests: XCTestCase {
     XCTAssert(verses.isEmpty)
   }
   
-  func testPickBook_testIsGoodData() {
-    // giver
-    
-    // when
-    let isDataGood = sutGood.isDataGood()
-    
-    // then
-    XCTAssert(isDataGood)
-  }
-  
-  func testPickBook_testIsNotGoodData() {
-    // given
-    
-    // when
-    let isDataGood = sutBad.dataIsNotGood
-    
-    // then
-    XCTAssertFalse(isDataGood)
-  }
-  
-  func testPickBook_testGoodData () {
-    
-    // when
-    let isDataGood = sutGood.dataIsNotGood
-    
-    // then
-    XCTAssert(isDataGood)
-  }
-  
   func testPickBook_jsonDataIsNotEmpty() {
     // given
     
@@ -89,5 +60,26 @@ class PickBookTests: XCTestCase {
     let data = sutBad.jsonData
     
     XCTAssertTrue(data.isEmpty)
+  }
+  
+  // These Tests are for getting information about the data
+  // Unfortunatly because the variable dataIsNotGood is bound and cannot be notted
+  // I fixed it by notting the value in instantiating the struct.
+  func testPickBook_isNotGoodData_BadData() {
+    let dataIsGood = sutGood.dataIsNotGood
+    let dataIsNotGood = sutBad.dataIsNotGood
+    
+    XCTAssertFalse(dataIsGood)
+    XCTAssertTrue(dataIsNotGood)
+  }
+  
+  func testPickBook_isGoodData() {
+    // when
+    let dataIsNotGood = sutBad.isDataGood()
+    let dataIsGood = sutGood.isDataGood()
+    
+    // then
+    XCTAssert(dataIsGood)
+    XCTAssertFalse(dataIsNotGood)
   }
 }

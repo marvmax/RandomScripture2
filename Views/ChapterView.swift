@@ -12,6 +12,7 @@ struct ChapterView: View {
   @Binding var returnTab: Int
   @Binding var chooseAgainTab: Int
   @EnvironmentObject var scriptures: Scriptures
+  @EnvironmentObject var screenSettings: ScreenSettings
   //@EnvironmentObject var opacity: Opacity
   var count = 0
   var body: some View {
@@ -60,11 +61,11 @@ struct ChapterView_Previews: PreviewProvider {
   static var previews: some View {
     ChapterView(selectedTab: .constant(2), returnTab: .constant(3), chooseAgainTab: .constant(5))
       .environmentObject(Scriptures())
-      .environmentObject(Opacity())
+      .environmentObject(ScreenSettings())
       .previewDevice("iPhone 14 Plus Max")
     ChapterView(selectedTab: .constant(2), returnTab: .constant(3), chooseAgainTab: .constant(5))
       .environmentObject(Scriptures())
-      .environmentObject(Opacity())
+      .environmentObject(ScreenSettings())
       .previewDevice("iPhone 11")
   }
 }

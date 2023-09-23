@@ -16,6 +16,10 @@ struct ChooseView: View {
     ZStack {
       BackgroundView()
       VStack {
+        Text("Choose a book to generate\na verse from.")
+          .font(.title)
+          .multilineTextAlignment(.center
+          )
         MoveButton(buttonText: "Standard Works", colorBackground: "pink") {
           selectedTab = 1
           returnTab = 0

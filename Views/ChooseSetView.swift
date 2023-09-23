@@ -15,7 +15,7 @@ struct ChooseSetView: View {
       BackgroundView()
       VStack {
         Spacer()
-        Text("Choose to use Standard\nChristian Scriptures\nor Christian Restoration\nScriptures")
+        Text("Choose to use only the Bible\nor Restoration Scriptures \nincluding the Bible")
           .font(.title)
           .multilineTextAlignment(.center)
           .offset(x: 0, y: -50)
