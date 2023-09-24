@@ -1,0 +1,44 @@
+{
+	"default": {
+		"keyword": {
+			"fonts": [
+				{
+				"font": "./fonts/AmericanTypewriter.ttc",
+				"supported": ["en-us"]
+				}
+			],
+			"color": "#2F1EEC"	
+		},
+		"title": {
+			"fonts": [
+				{
+				"font": "./fonts/AmericanTypewriter.ttc",
+				"supported": ["en-us"]
+				}
+			],
+			"color": "#FFFFFF"
+		},
+		"background": "./blue.jpg",
+		"padding": 50
+	},
+	"data": [
+		{
+			"filter": "Chapter View"
+		},
+		{
+			"filter": "Choose Set"
+		},
+		{
+			"filter": "Christian Scriptures"
+		},
+		{
+			"filter": "Context View"
+		},
+		{
+			"filter": "Verse View"
+		},
+		{
+			"filter": "Restoration Scripture"
+		}
+	]
+}

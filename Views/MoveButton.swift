@@ -33,6 +33,7 @@ struct MoveButtonStyle: ButtonStyle {
   let foreColor: String
   func makeBody(configuration: Configuration) -> some View {
     configuration.label
+      .opacity(configuration.isPressed ? 0.8 : 1)
       .frame(maxWidth: 225, maxHeight: 25)
       .foregroundColor(Color.black)
       .background(
