@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+  //@EnvironmentObject var screenSettings: ScreenSettings
+  //@EnvironmentObject var scriptures: Scriptures
   @State private var selectedTab = 3
   @State private var returnTab = 0
   @State private var chooseAgainTab = 0
+  
   
   var body: some View {
     //BackgroundView()
@@ -38,6 +41,7 @@ struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
       .environmentObject(Scriptures())
+      .environmentObject(ScreenSettings())
       .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
   }
 }
